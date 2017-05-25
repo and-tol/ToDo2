@@ -1,4 +1,4 @@
-﻿*{
+*{
 	outline: none;
 	box-sizing: border-box;
 }
@@ -19,6 +19,7 @@ button{
 	padding: 0;
 	border: none;
 	background: none;
+	font-family: 'Open Sans', sans-serif;
 }
 .wrapper{
 	width:744px;
@@ -85,23 +86,23 @@ h2{
 
 /* --- checkbox style --- */
 input[type=checkbox] {
-  display: none;
+	display: none;
 }
 /*input[type="checkbox"]:checked {  }*/
 label {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
 }
 /*label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 13px;
-  left: 8px;
+content: "";
+display: block;
+position: absolute;
+top: 13px;
+left: 8px;
 }*/
 input[type="checkbox"]:checked+label .fa-check{
-  /*content: "";*/
+	/*content: "";*/
 	visibility: visible;
 }
 .fa-stack{
@@ -151,30 +152,33 @@ input[type="checkbox"]:checked+label+.field{
 .field:focus+.del-task{
 	display: none;
 }
-input[type="checkbox"] .field:focus {
-	display: none;
-}
+
 
 /* --- footer style --- */
-
 .footer{
-	padding:7px 7px 7px 14px;
+	padding:7px 5px 7px 14px;
+	width: 100%;
+
 }
 .indicator{
 	color: #878787;
-	font-size: 12px;
-	/*margin-top: 11px;*/
-	display: inline-block;
-}
-.buttons{
-	/*margin-right: 5px;*/
+	/*margin-top: 6px;*/
+	font-size: 13px;
+	line-height: 34px;
 }
 .btn{
+	color: #878787;
 	padding: 7px;
-	color:#8b8b8b;
+
 	border: 1px solid rgba(239, 213, 214, 0);
+	margin-right: 8px;
+	font-weight: 300;
+}
+.btn:last-child{
+	margin-right: 0;
+	margin-left: 56px;
 }
 .btn:focus{
-border: 1px solid rgba(239, 213, 214, 1);
-border-radius: 3px;
+	border: 1px solid rgba(239, 213, 214, 1);
+	border-radius: 3px;
 }
