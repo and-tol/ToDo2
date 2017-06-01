@@ -246,10 +246,15 @@ input[type='checkbox']:checked + label + .field
     margin-right: 8px;
     padding: 7px;
 
-    color: #878787;
+    /*color: #878787;*/
+    border-radius: 3px;
     border: 1px solid rgba(239, 213, 214, 0);
 }
 
+.btn:hover
+{
+  border: 1px solid rgba(239, 213, 214, 1);
+}
 .buttons
 {
     display: inline-block;
@@ -259,7 +264,7 @@ input[type='checkbox']:checked + label + .field
 .btn-activ
 {
     border: 1px solid rgba(239, 213, 214, 1);
-    border-radius: 3px;
+
 }
 
 .clear-compl
