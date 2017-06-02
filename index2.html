@@ -15,16 +15,19 @@
     <h2>todos</h2>
     <div class="todos">
 
-      <div class="row-name" >
-        <button class="btn-name">
-          <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-        </button>
-        <div class="task-name">What needs to be done?</div>
-      </div>
+      <form action="" method="post" name="task" >
+        <div class="row-name" >
+          <button class="btn-name">
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </button>
+          <input type="text" name="task-name" class="task-name" placeholder="What needs to be done?" />
+        </div>
+      </form>
 
-      <form action="" method="post" name="tasks" >
 
-        <div class="row cf">
+      <div class="row">
+
+        <div class="fl-l">
           <input id="task1" type="checkbox" name="task2"/>
           <label for="task1" >
             <span class="fa-stack fa-lg">
@@ -32,13 +35,16 @@
               <i class="fa fa-check fa-stack-1x" ></i>
             </span>
           </label>
-          <div class="field right" contenteditable>Buy milk</div>
-          <button class="del-task">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-          </button>
         </div>
 
-        <div class="row cf">
+        <div class="field" contenteditable>Buy milk</div>
+        <button class="del-task">
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="fl-l">
           <input id="task2" type="checkbox" name="task2"/>
           <label for="task2" >
             <span class="fa-stack fa-lg">
@@ -46,52 +52,57 @@
               <i class="fa fa-check fa-stack-1x" ></i>
             </span>
           </label>
-          <div class="field right" contenteditable>Prepare the report</div>
-          <button class="del-task">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-          </button>
+        </div>
+        <div class="field" contenteditable>Prepare the report</div>
+        <button class="del-task">
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="fl-l">
+        <input id="task3" type="checkbox" name="task3"/>
+        <label for="task3" >
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle-thin fa-stack-2x" ></i>
+            <i class="fa fa-check fa-stack-1x" ></i>
+          </span>
+        </label>
+      </div>
+        <div class="field" contenteditable>Call Mr. Smyth</div>
+        <button class="del-task">
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
         </div>
 
-        <div class="row cf">
-          <input id="task3" type="checkbox" name="task3"/>
-          <label for="task3" >
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle-thin fa-stack-2x" ></i>
-              <i class="fa fa-check fa-stack-1x" ></i>
-            </span>
-          </label>
-          <div class="field right" contenteditable>Call Mr. Smyth</div>
-          <button class="del-task">
-            <i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
-        </div>
-
-        <div class="row cf">
-          <input id="task4" type="checkbox" name="task4"/>
-          <label for="task4" >
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle-thin fa-stack-2x" ></i>
-              <i class="fa fa-check fa-stack-1x" ></i>
-            </span>
-          </label>
+        <div class="row">
+          <div class="fl-l">
+            <input id="task4" type="checkbox" name="task4"/>
+            <label for="task4" >
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x" ></i>
+                <i class="fa fa-check fa-stack-1x" ></i>
+              </span>
+            </label>
+          </div>
           <div class="field right" contenteditable>Pick up dress from the dry cleaner</div>
           <button class="del-task">
             <i class="fa fa-times fa-2x" aria-hidden="true"></i>
           </button>
         </div>
 
-      </form>
-      <div class="footer cf">
-        <div class="indicator left"> 3 items left</div>
-        <div class="buttons">
-          <button class="btn all btn-activ">All</button>
-          <button class="btn activ">Active</button>
-          <button class="btn compl">Completed</button>
+
+        <div class="footer cf">
+          <div class="indicator fl-l"> 3 items fl-l</div>
+          <div class="buttons">
+            <button class="btn all btn-activ">All</button>
+            <button class="btn activ">Active</button>
+            <button class="btn compl">Completed</button>
+          </div>
+          <button class="btn right clear-compl">Clear completed</button>
         </div>
-        <button class="btn right clear-compl">Clear completed</button>
       </div>
     </div>
-  </div>
 
-</body>
+  </body>
 
-</html>
+  </html>
