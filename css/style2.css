@@ -12,7 +12,7 @@ body
 
 .fl-r
 {
-    float: fl-r;
+    float: right;
 }
 
 .cf
@@ -27,31 +27,32 @@ button
 {
     font-family: 'Open Sans', sans-serif;
 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     border: none;
-    background: none;
-    box-sizing: border-box;
     outline: none;
+    background: none;
 }
 
 input
 {
-    padding: 0;
     margin: 0;
-color: #d9d9d9;
+    padding: 0;
+
+    color: #d9d9d9;
 }
 
 .wrapper
 {
+    box-sizing: border-box;
     width: 744px;
     margin: 100px auto;
     padding: 25px 95px 60px;
 
     border: 1px solid #afafaf;
     background-color: #f5f5f5;
-    box-sizing: border-box;
 }
 
 h2
@@ -71,7 +72,7 @@ h2
 .fa
 {
     color: #e6e6e6;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
 /*.row-name,
@@ -98,8 +99,8 @@ h2
 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-
     /*width: 550px;*/
+
     margin: 0 auto;
 
     color: #4d4d4d;
@@ -110,36 +111,85 @@ h2
 .btn-name
 {
     width: 43px;
+    margin-left: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 4px;
 
     cursor: pointer;
 }
 
 .task-name
 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
+    font-weight: 300;
     font-style: italic;
 
     display: inline-block;
 
-    padding-left: 24px;
-    outline: none;
-    border: none;
-    color: #d9d9d9;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     width: 83%;
+    padding-left: 24px;
+
+    color: #d9d9d9;
+    border: none;
+    outline: none;
 }
 
-.task-name:input-placeholder
+.task-name::placeholder
 {
-    color: #d9d9d9;
-    font-size: 22px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
     font-weight: 300;
+
+    color: #d9d9d9;
 }
+.task-name::-webkit-input-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+
+    color: #d9d9d9;
+}
+
+.task-name::-moz-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+
+    color: #d9d9d9;
+} /* Firefox 19+ */
+
+.task-name:-moz-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+
+    color: #d9d9d9;
+} /* Firefox 18- */
+
+.task-name:-ms-input-placeholder
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+
+    color: #d9d9d9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .row
 {
@@ -161,22 +211,19 @@ input[type=checkbox]
 
 label
 {
-    width: 60px;
-
-    display: inline-block;
-
     cursor: pointer;
 }
 
 input[type='checkbox']:checked + label .fa-check
 {
-    /*content: "";*/
     visibility: visible;
 }
 
 .fa-stack
 {
     margin-top: 10px;
+    margin-right: 11px;
+    margin-left: 7px;
 }
 
 .fa-check
@@ -192,12 +239,13 @@ input[type='checkbox']:checked + label .fa-check
 {
     font-size: 20px;
 
+    overflow: hidden;
+
     box-sizing: border-box;
     min-height: 60px;
     padding-top: 15px;
-    padding-left: 14px;
     padding-right: 40px;
-    overflow: hidden;
+    padding-left: 14px;
 
     color: #4d4d4d;
     border: 1px solid transparent;
@@ -264,11 +312,12 @@ input[type='checkbox']:checked + label + .field
 {
     font-weight: 300;
 
-    margin-fl-r: 8px;
     padding: 7px;
 
-    border-radius: 3px;
     border: 1px solid rgba(239, 213, 214, 0);
+    border-radius: 3px;
+
+    margin-right: 8px;
 }
 
 .btn:hover
@@ -279,16 +328,16 @@ input[type='checkbox']:checked + label + .field
 .buttons
 {
     display: inline-block;
+
     margin-left: 100px;
 }
 
 .btn-activ
 {
     border: 1px solid rgba(239, 213, 214, 1);
-
 }
 
 .clear-compl
 {
-    margin-fl-r: 18px;
+    margin-right: 18px;
 }
