@@ -140,16 +140,23 @@ h2
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 300;
+    text-overflow:ellipsis;
 
     color: #d9d9d9;
+
+    opacity: 1; transition: opacity 0.3s ease;
 }
+
 .task-name::-webkit-input-placeholder
 {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 300;
+    text-overflow:ellipsis;
 
     color: #d9d9d9;
+
+    opacity: 1; transition: opacity 0.3s ease;
 }
 
 .task-name::-moz-placeholder
@@ -157,8 +164,11 @@ h2
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 300;
+    text-overflow:ellipsis;
 
     color: #d9d9d9;
+
+    opacity: 1; transition: opacity 0.3s ease;
 } /* Firefox 19+ */
 
 .task-name:-moz-placeholder
@@ -166,8 +176,11 @@ h2
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 300;
+    text-overflow:ellipsis;
 
     color: #d9d9d9;
+
+    opacity: 1; transition: opacity 0.3s ease;
 } /* Firefox 18- */
 
 .task-name:-ms-input-placeholder
@@ -175,18 +188,44 @@ h2
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 300;
+    text-overflow:ellipsis;
 
     color: #d9d9d9;
+
+    opacity: 1; transition: opacity 0.3s ease;
 }
 
+/* placeholder animation */
 
+.task-name:focus::placeholder
+{
+opacity: 0;
+transition: opacity 0.3s ease;
+}
 
+.task-name:focus::-webkit-input-placeholder
+{
+opacity: 0;
+transition: opacity 0.3s ease;
+}
 
+.task-name:focus::-moz-placeholder
+{
+opacity: 0;
+transition: opacity 0.3s ease;
+} /* Firefox 19+ */
 
+.task-name:focus:-moz-placeholder
+{
+opacity: 0;
+transition: opacity 0.3s ease;
+} /* Firefox 18- */
 
-
-
-
+.task-name:focus:-ms-input-placeholder
+{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
 
 
