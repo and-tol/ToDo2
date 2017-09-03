@@ -144,7 +144,8 @@ h2
 
     color: #d9d9d9;
 
-    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .task-name::-webkit-input-placeholder
@@ -156,7 +157,8 @@ h2
 
     color: #d9d9d9;
 
-    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .task-name::-moz-placeholder
@@ -168,7 +170,8 @@ h2
 
     color: #d9d9d9;
 
-    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 } /* Firefox 19+ */
 
 .task-name:-moz-placeholder
@@ -180,7 +183,8 @@ h2
 
     color: #d9d9d9;
 
-    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 } /* Firefox 18- */
 
 .task-name:-ms-input-placeholder
@@ -192,7 +196,8 @@ h2
 
     color: #d9d9d9;
 
-    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 /* placeholder animation */
@@ -226,9 +231,6 @@ transition: opacity 0.3s ease;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
-
-
 
 .row
 {
